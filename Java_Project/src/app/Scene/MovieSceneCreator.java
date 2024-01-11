@@ -58,10 +58,7 @@ public class MovieSceneCreator extends SceneCreator implements EventHandler<Mous
         
         // Border Pane layout
         rootBorderPane.setPadding(new Insets(10));
-        
        
-        
-
         // Create columns
         TableColumn<Tickets, String> codeColumn = new TableColumn<>("Code");
         TableColumn<Tickets, String> movieColumn = new TableColumn<>("Movie");
@@ -84,29 +81,20 @@ public class MovieSceneCreator extends SceneCreator implements EventHandler<Mous
         // Add to Left of Border Pane
         rootBorderPane.setLeft(ticketTableView);
 
-
         // Create input area for new ticket
         VBox MovieTicketInputBox = new VBox(10);
         MovieTicketInputBox.setPadding(new Insets(10));
-
         
-
-           
+        // All Vbox Children
+        MovieTicketInputBox.getChildren().addAll(movieField,typeField,seatField,priceField, addTicketButton, cancelButton, modifyButton,  goback);
+        
+        // Add to Right of Border Pane
+        rootBorderPane.setRight(MovieTicketInputBox);
+        
         addTicketButton.setOnMouseClicked(this);
         cancelButton.setOnMouseClicked(this);
         modifyButton.setOnMouseClicked(this);
         goback.setOnMouseClicked(this);
-        
-        // All Vbox Children
-        MovieTicketInputBox.getChildren().addAll(movieField,typeField,seatField,priceField, 
-                addTicketButton,
-                cancelButton,
-                modifyButton,
-                goback
-        );
-        // Add to Right of Border Pane
-        rootBorderPane.setRight(MovieTicketInputBox);
-        
     }
     
     @Override
@@ -153,6 +141,7 @@ public class MovieSceneCreator extends SceneCreator implements EventHandler<Mous
         }
         
         if (event.getSource() == goback) {
+            //Set the Stage to UserScene
             Main.primaryStage.setScene(Main.UserScene);
             Main.primaryStage.setTitle("User Scene");
             

@@ -7,39 +7,37 @@ import app.Scene.PartySceneCreator;
 
 
 import javafx.application.Application;
-import javafx.stage.StageStyle;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 
 public class Main extends Application {
     public static Stage primaryStage;
     public static Scene mainScene, UserScene, PartyScene, MovieScene;
-    //public static Scene menuScene;
+    
     @Override
     public void start(Stage primaryStage) {
-        this.primaryStage = primaryStage;
-        //primaryStage.initStyle(StageStyle.UNDECORATED);
-            
-//        Menu menuSceneCreator = new  Menu(650, 300);
-//        menuScene = menuSceneCreator.createScene();
-        
+       this.primaryStage = primaryStage;
+       
+        // Scene Main
         MainSceneCreator mainSceneCreator = new MainSceneCreator(650, 300);
         mainScene = mainSceneCreator.createScene();
         
+        //Scene User
         UserSceneCreator UserSceneCreator = new UserSceneCreator(750, 500);
         UserScene = UserSceneCreator.createScene();
-            
+        
+        //Scene Party
         PartySceneCreator partySceneCreator = new PartySceneCreator(750, 500);
         PartyScene = partySceneCreator.createScene();
         
+        //Scene Movie
         MovieSceneCreator MovieSceneCreator = new MovieSceneCreator(750, 500);
         MovieScene = MovieSceneCreator.createScene();
         
-            
+        // Set the Stage to mainScene and title Main App
         primaryStage.setScene(mainScene);
-        primaryStage.setTitle("JavaFXApplication1");
+        primaryStage.setTitle("Main App");
         primaryStage.show();
     }
 
