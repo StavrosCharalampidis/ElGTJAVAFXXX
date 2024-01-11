@@ -1,0 +1,20 @@
+Inception,2010,Leonardo DiCaprio,148,10.50
+The Shawshank Redemption,1994,Tim Robbins,142,9.50
+The Dark Knight,2008,Christian Bale,152,11.00
+Pulp Fiction,1994,John Travolta,154,9.00
+Forrest Gump,1994,Tom Hanks,142,9.50
+The Godfather,1972,Marlon Brando,175,12.00
+Schindler's List,1993,Liam Neeson,195,11.50
+Fight Club,1999,Brad Pitt,139,10.00
+The Matrix,1999,Keanu Reeves,136,10.50
+The Lord of the Rings: The Fellowship of the Ring,2001,Elijah Wood,178,11.50
+Titanic,1997,Leonardo DiCaprio,195,10.00
+Avatar,2009,Sam Worthington,162,12.50
+Inglourious Basterds,2009,Brad Pitt,153,10.00
+The Silence of the Lambs,1991,Anthony Hopkins,118,9.50
+The Departed,2006,Leonardo DiCaprio,151,11.00
+Gladiator,2000,Russell Crowe,155,10.50
+The Social Network,2010,Jesse Eisenberg,120,10.00
+The Grand Budapest Hotel,2014,Ralph Fiennes,99,9.50
+The Revenant,2015,Leonardo DiCaprio,156,11.50
+La La Land,2016,Ryan Gosling,128,10.50
